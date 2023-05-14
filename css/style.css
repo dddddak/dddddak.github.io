@@ -1,0 +1,303 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.max_width {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.tab1_content {
+    height: 100vh;
+}
+
+.tab2_content {
+    height: 90vh;
+    background-color: #f6f6f0;
+    /* background-color: #fdfdfc; */
+    /* opacity: 0; */
+}
+
+.tab3_content {
+    height: 90vh;
+    background-color: #fdfdfc;
+}
+#nav ul {
+    list-style-type: none ;
+}
+
+#nav ul li {
+    display: inline-block;
+    position: relative;
+    font-size: 22px;
+    top: 33px;
+    left: 235px;
+    margin-left: 100px;
+    margin-right: 40px;
+    text-align: center;
+
+}
+
+#nav ul li a {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.5s ease;
+}
+
+#nav ul li a:link, #nav ul li a:visited {
+    color: #747457;
+    text-decoration: none;
+}
+
+#nav ul li a:hover, #nav ul li a:active {
+    color: #cccca9;
+    transform: rotateX(180deg);
+    /* border: dotted; */
+}
+
+#mainbgdimg {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 210px;
+    width: 200px;
+    height: 1150px;
+    opacity: 0.2;
+    /* transform: translate(-50%,-50%); */
+}
+
+#hellotext {
+    position: absolute;
+    top: 45%;
+    left: 37.8%;
+    color: #575741;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+}
+
+#dtext{
+    position: absolute;
+    top: 52%;
+    left: 34.6%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+#nametext{
+    position: absolute;
+    top: 52%;
+    left: 54.8%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.menubar {
+    position: relative;
+    top:52px;
+    left: 200px;
+    width:1100px;
+    height:3px;
+    background:#575741;
+}
+
+#title{
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    top: 35px;
+    text-align: center;
+    color: #444441;
+}
+
+.bar{
+    position: relative;
+    top: 43px;
+    margin: 0 auto;
+    height: 3px;
+    width: 130px;
+    background: #575741;
+}
+
+#aboutimg {
+    position: absolute;
+    opacity: 0.85;
+    top: 125%;
+    left: 200px;
+}
+
+.aboutintro{
+    position: relative;
+    font-size: 20px;
+    top: 170px;
+    left: 625px;
+}
+
+.myskill .skill {
+    position: relative;
+    display: inline-block;
+    /* list-style: none; */
+    margin-left: 10px;
+    top: 200px;
+    left: 625px;
+    background-color: #d8d8d8;
+    padding: .3rem;
+    border-radius: 0.3rem;
+    transition: all 0.3s ease;
+    z-index: 3;
+}
+
+.myskill .skill:hover { /*????*/
+    cursor: pointer;
+    background-color: #d3e2e2;
+    padding: .6rem;
+}
+
+.tab2_content .right {
+    margin-top: 8%;
+    margin-right: 25%;
+    float: right;
+}
+
+.tab2_content .right .contact-text {
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.tab2_content .right .content-area {
+    margin-top: 10px;
+    height: 100px;
+    width: 300px;
+}
+
+.tab2_content .right form .name {
+    margin-top: 30px;
+    margin-right: 0px;
+}
+
+.tab2_content .right form .email {
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+.tab2_content .right form .subject {
+    margin-top: 10px;
+}
+
+.tab2_content .right form .field input,
+.tab2_content .right form .content-area textarea {
+    height: 100%;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #444441;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 15px;
+    
+}
+
+.tab2_content .right form .content-area textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.tab2_content .right form .button {
+    margin-top: 25px;
+    height: 40px;
+    width: 120px;
+}
+
+.tab2_content .right form .button button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #444441;
+    background-color: #f6f6f0;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tab2_content .right form .button button:hover {
+    color: #fff;
+    background: none;
+}
+
+.tab2_content .left {
+    margin-top: 12%;
+    margin-left: 25%;
+    float: left;
+    transition: all 0.3s ease;
+}
+
+.tab2_content .left .emailtext,
+.tab2_content .left .addresstext {
+    margin-top: -11%;
+    margin-left: 50px;
+}
+
+.tab2_content .left .fa-brands {
+    margin-left: 1%;
+}
+
+.tab2_content .left i:nth-child(8){
+    margin-left: 15px;
+}
+
+.tab2_content .left .fa-brands:hover {
+    cursor: pointer;
+    color: #747457;
+}
+
+
+.tab3_content .project #p1 {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 6%;
+    overflow: hidden;
+}
+
+.tab3_content .project #p2 {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+.tab3_content .project #p1 a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tab3_content .project #p2 a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tab3_content .project #p1 a:nth-child(1):hover {
+    opacity: 0.4;
+}
+
+.tab3_content .project #p1 a:nth-child(2):hover {
+    opacity: 0.4;
+}
+
+.tab3_content .project #p2 a:nth-child(1):hover {
+    opacity: 0.4;
+}
+
+.tab3_content .project #p2 a:nth-child(2):hover {
+    opacity: 0.4;
+}
