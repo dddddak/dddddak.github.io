@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3a115195d8.js" crossorigin="anonymous"></script>
+        <script src="js/jssource.js"></script>
+        <meta charset="UTF-8">
+        <title>Dayoung Kim</title>
+        <script>
+            var array=["#3a3a2b","#f0f0e1","#d3d3a7","#e1e1c4","#ccc599","#8e8e6b","#000","#91916d","#575741"];
+            var cnt=0;
+            window.onload=function(){ff();}
+            function ff(){
+                if(cnt==9) cnt=0;
+                dtext.style.color=array[cnt++];
+                setTimeout("ff()",1000);
+            }
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    $('tab_content').each(function(i){
+                        var bottom_of_object = $(this).offset().top + $(this).outerHeight()/3;
+                        var bottom_of_window = $(window).scrollTop() + $(window).height();
+                        if (bottom_of_window > bottom_of_object){
+                            $(this).animate({'opacity':'1'},500);
+                        }
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="max-width">
+        <div class="content">
+            <div id="tab1" class="tab1_content">
+                <div id="mainbgdimg">
+                    <img src="reference/mainbackgroundimg.jpg" alt="Mainbgdimage">
+                </div>
+                <div id="nav">
+                    <ul>
+                        <li><a href="#tab1">Home</a></li>
+                        <li><a href="#tab2">About Me</a></li>
+                        <li><a href="#tab3">Project</a></li>
+                        <li><a href="#tab4">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="menubar"></div>
+                <div id="hellotext">Hello! My Name is</div>
+                <div id="dtext">D</div>
+                <div id="nametext">AYOUNG KIM</div>
+            </div>
+            <div id="tab2" class="tab2_content">
+                <p id="title">About Me</p>
+                <div class="bar"></div>
+                <div class="aboutintro">Hi, my name is Dayoung Kim.<br>I graduated Computer Enginnering Technology at Seneca College with a GPA of 3.7.<br>
+                I have the ability to write computer programming code, networking, circuit design, deal with troubleshooting, and handle various software packages.<br>
+                I have motivation and passion to learn and look forward to contributing and gaining valuable experiences.</div>
+                <div class="myskill">
+                    <div class="skill">C</div>
+                    <div class="skill">C++</div>
+                    <div class="skill">C#</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">Circuit Designing</div>
+                    <div class="skill">Mathemetics</div>
+                    <div class="skill">Networking</div>
+                    <br><br>
+                    <div class="skill">RaspberryPi</div>
+                    <div class="skill">Troubleshooting</div>
+                    <div class="skill">Microsoft Office</div>
+                    <div class="skill">Adobe Premiere</div>
+                    <div class="skill">English/Korean</div>
+                </div>
+                <div id="aboutimg">
+                    <img src="reference/aboutimg.jpg" alt="Aboutimage" width="400" height="400">
+                </div>
+                
+            </div>
+            <div id="tab3" class="tab3_content">
+                <p id="title">Project</p>
+                <div class="bar"></div>
+                <div class="project">
+                    <div id="p1">
+                        <a href="https://drive.google.com/drive/folders/1myc4aeZyY2h3eJvMNJlv02yrDs7_YY0B?usp=sharing"><img src="reference/components.jpg" alt="p1image" width="300" height="300"></a>
+                        <!-- <p id="p1imgtext">Take a photo while users are smiling by using Rapberry Pi and facial detection.</p> -->
+                        <a href="https://dddddak.github.io/html/dkim175_PRG550B.223.A2.html"><img src="reference/poker.PNG" alt="pokerimage" width="300" height="300"></a>
+                    </div>
+                    <div id="p2">
+                        <a href="https://www.dropbox.com/s/sw578w19yiij4qy/title_2.mp4?dl=0"><img src="reference/video.PNG" alt="videoimage" width="300" height="300"></a>
+                        <a href="https://github.com/dddddak/Shoppinglist_tcp"><img src="reference/shopping.PNG" alt="shoppingimage" width="300" height="300"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="tab4" class="tab4_content">
+                <p id="title">Contact</p>
+                <div class="bar"></div>
+                <div class="left column">
+                    <i class="fa-solid fa-envelope fa-2x"></i>
+                    <p class="emailtext">ekdud4143@gmail.com</p>
+                    <br>
+                    <i class="fa-regular fa-address-card fa-2x"></i>
+                    <p class="addresstext">North York, Ontario, Canada</p>
+                    <br>
+                    <a href="https://www.linkedin.com/in/dayoung-kim-5b909b26b/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    <a href="https://github.com/dddddak"><i class="fa-brands fa-github fa-2x"></i></a>
+                </div>
+                <div class="right column">
+                    
+                    <div class="contact-text">Message Me</div>
+                    <form action="#">
+                        <div class="field">
+                            <div class="field name">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="field subject">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="field content-area">
+                            <textarea cols="30" rows="10" placeholder="Content..." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    <footer>
+        <span>Created By <a href="#">Dayoung Kim</a> | <i class="fas fa-copyright"></i>2023 All rights reserved</span>
+    </footer>
+</html>
